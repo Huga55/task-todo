@@ -14,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-
 Route::get('/auth/me', 'AuthController@checkUser');
+Route::post('/auth/user', 'AuthController@authUser');
+
+Route::get('user/info', 'InfoController@getInfo');
