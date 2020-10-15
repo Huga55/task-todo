@@ -3,7 +3,7 @@ import * as axios from "axios";
 
 const instance = axios.create({
     withCredentials: true,
-    baseURL: "http://task-todo-my-project.herokuapp.com/api/",
+    baseURL: "http://task-todo-my-project.herokuapp.com/",
     headers: {
         Authorization: "Bearer " + localStorage.getItem('token'),
     }
