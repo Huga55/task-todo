@@ -24,6 +24,7 @@ class UsersTableSeeder extends Seeder
 	        	'patronymic' => 'Иванович',
 	        	'password' => md5('admin'),
 	        	'status' => 1,
+                'boss_id' => 0,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
         	],
@@ -34,9 +35,32 @@ class UsersTableSeeder extends Seeder
 	        	'patronymic' => 'Николаевич',
 	        	'password' => md5('user'),
 	        	'status' => 0,
+                'boss_id' => 1,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
-        	]
+        	],
+            [
+                'login' => 'user2',
+                'name' => 'Василий',
+                'surname' => 'Пеньков',
+                'patronymic' => 'Иванович',
+                'password' => md5('user3'),
+                'status' => 0,
+                'boss_id' => 1,
+                'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s"),
+            ],
+            [
+                'login' => 'user3',
+                'name' => 'Роман',
+                'surname' => 'Колпаков',
+                'patronymic' => 'Васильевич',
+                'password' => md5('user3'),
+                'status' => 0,
+                'boss_id' => 1,
+                'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s"),
+            ],
         ]);
     }
 }

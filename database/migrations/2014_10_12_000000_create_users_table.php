@@ -21,6 +21,8 @@ class CreateUsersTable extends Migration
             $table->string('patronymic');
             $table->string('password');
             $table->integer('status');
+            $table->integer('boss_id');
+            $table->string('api_token', 60)->unique()->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

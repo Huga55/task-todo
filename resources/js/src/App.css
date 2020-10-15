@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+a:focus, .button:focus, .button.alt:focus, button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
+    outline: none;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+*:active {
+    background: none;
+}
+
+.input {
+    padding-left: 15px;
+    background-color: #f3f5ef;
+    border:none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.text_bold {
+    font-weight: bold;
+}
+
+.bg_green {
+    background-color: green;
+    color:#fff;
+}
+
+.bg_red {
+    background-color: red;
+    color:#fff;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: rgb(237, 239, 236, 0.8);
+}
+
+.App {
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F4F5F7;
+}
+

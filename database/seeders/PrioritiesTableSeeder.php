@@ -17,9 +17,9 @@ class PrioritiesTableSeeder extends Seeder
     public function run()
     {
         DB::table('priorities')->insert([
-        	['name' => 'Высокий'],
-        	['name' => 'Средний'],
         	['name' => 'Низкий'],
+        	['name' => 'Средний'],
+        	['name' => 'Высокий'],
         ]);
     }
 }

@@ -1,0 +1,10 @@
+.preloader {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -100px;
+    z-index: 150;
+}
