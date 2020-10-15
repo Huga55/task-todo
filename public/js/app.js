@@ -6646,7 +6646,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, ".content__tasks {\n    max-width: 760px;\n    margin-left: -20px;\n    margin-top: 40px;\n    display: flex;\n    justify-content: flex-start;\n    align-items: flex-start;\n    flex-wrap: wrap;\n    box-sizing: border-box;\n}\n\n.content__task {\n    max-width: 300px;\n    width: 300px;\n    padding: 20px;\n    margin: 0 20px;\n    margin-bottom: 30px;\n    background-color: #fff;\n    border-radius: 8px;\n    box-sizing: border-box;\n    cursor: pointer;\n    transition: 0.3s;\n}\n\n.content__task:hover {\n    transform: scale(1.05);\n}\n\n.content__title {\n    padding: 2px 0;\n    padding-left: 4px;\n    font-size: 24px;\n    border-radius: 6px;\n}\n\n.content__title_error {\n    background-color: red;\n    color: #fff;\n}\n\n.content__priority {\n    margin: 4px 0;\n    font-size: 18px;\n}\n\n.content__date-end {\n    font-size: 18px;\n}\n\n.content__worker {\n    margin: 4px 0;\n    font-size: 18px;\n}\n", ""]);
+exports.push([module.i, ".content__tasks {\n    max-width: 760px;\n    margin-left: -20px;\n    margin-top: 40px;\n    display: flex;\n    justify-content: flex-start;\n    align-items: flex-start;\n    flex-wrap: wrap;\n    box-sizing: border-box;\n}\n\n.content__task {\n    max-width: 300px;\n    width: 300px;\n    padding: 20px;\n    margin: 0 20px;\n    margin-bottom: 30px;\n    background-color: #fff;\n    border-radius: 8px;\n    box-sizing: border-box;\n    cursor: pointer;\n    transition: 0.3s;\n}\n\n.content__task:hover {\n    transform: scale(1.05);\n}\n\n.content__time {\n    width: 100%;\n    padding: 10px 30px;\n    margin-left: 20px;\n    margin-bottom: 30px;\n    background-color: #fff;\n    border-radius: 6px;\n    font-size: 24px;\n    box-sizing: border-box;\n}\n\n.content__title {\n    padding: 2px 0;\n    padding-left: 4px;\n    font-size: 24px;\n    border-radius: 6px;\n}\n\n.content__title_error {\n    background-color: red;\n    color: #fff;\n}\n\n.content__title_complete {\n    background-color: limegreen;\n    color: #fff;\n}\n\n.content__priority {\n    margin: 4px 0;\n    font-size: 18px;\n}\n\n.content__date-end {\n    font-size: 18px;\n}\n\n.content__worker {\n    margin: 4px 0;\n    font-size: 18px;\n}\n", ""]);
 
 // exports
 
@@ -83391,131 +83391,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/redux-form/lib/actionTypes.js":
-/*!****************************************************!*\
-  !*** ./node_modules/redux-form/lib/actionTypes.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports["default"] = exports.UPDATE_SYNC_WARNINGS = exports.UPDATE_SYNC_ERRORS = exports.UNTOUCH = exports.UNREGISTER_FIELD = exports.TOUCH = exports.SUBMIT = exports.STOP_SUBMIT = exports.STOP_ASYNC_VALIDATION = exports.START_SUBMIT = exports.START_ASYNC_VALIDATION = exports.SET_SUBMIT_SUCCEEDED = exports.SET_SUBMIT_FAILED = exports.RESET_SECTION = exports.RESET = exports.REGISTER_FIELD = exports.INITIALIZE = exports.FOCUS = exports.DESTROY = exports.CLEAR_ASYNC_ERROR = exports.CLEAR_SUBMIT_ERRORS = exports.CLEAR_SUBMIT = exports.CLEAR_FIELDS = exports.CHANGE = exports.BLUR = exports.AUTOFILL = exports.ARRAY_SWAP = exports.ARRAY_UNSHIFT = exports.ARRAY_SPLICE = exports.ARRAY_SHIFT = exports.ARRAY_REMOVE_ALL = exports.ARRAY_REMOVE = exports.ARRAY_PUSH = exports.ARRAY_POP = exports.ARRAY_MOVE = exports.ARRAY_INSERT = exports.prefix = void 0;
-var prefix = '@@redux-form/';
-exports.prefix = prefix;
-var ARRAY_INSERT = prefix + "ARRAY_INSERT";
-exports.ARRAY_INSERT = ARRAY_INSERT;
-var ARRAY_MOVE = prefix + "ARRAY_MOVE";
-exports.ARRAY_MOVE = ARRAY_MOVE;
-var ARRAY_POP = prefix + "ARRAY_POP";
-exports.ARRAY_POP = ARRAY_POP;
-var ARRAY_PUSH = prefix + "ARRAY_PUSH";
-exports.ARRAY_PUSH = ARRAY_PUSH;
-var ARRAY_REMOVE = prefix + "ARRAY_REMOVE";
-exports.ARRAY_REMOVE = ARRAY_REMOVE;
-var ARRAY_REMOVE_ALL = prefix + "ARRAY_REMOVE_ALL";
-exports.ARRAY_REMOVE_ALL = ARRAY_REMOVE_ALL;
-var ARRAY_SHIFT = prefix + "ARRAY_SHIFT";
-exports.ARRAY_SHIFT = ARRAY_SHIFT;
-var ARRAY_SPLICE = prefix + "ARRAY_SPLICE";
-exports.ARRAY_SPLICE = ARRAY_SPLICE;
-var ARRAY_UNSHIFT = prefix + "ARRAY_UNSHIFT";
-exports.ARRAY_UNSHIFT = ARRAY_UNSHIFT;
-var ARRAY_SWAP = prefix + "ARRAY_SWAP";
-exports.ARRAY_SWAP = ARRAY_SWAP;
-var AUTOFILL = prefix + "AUTOFILL";
-exports.AUTOFILL = AUTOFILL;
-var BLUR = prefix + "BLUR";
-exports.BLUR = BLUR;
-var CHANGE = prefix + "CHANGE";
-exports.CHANGE = CHANGE;
-var CLEAR_FIELDS = prefix + "CLEAR_FIELDS";
-exports.CLEAR_FIELDS = CLEAR_FIELDS;
-var CLEAR_SUBMIT = prefix + "CLEAR_SUBMIT";
-exports.CLEAR_SUBMIT = CLEAR_SUBMIT;
-var CLEAR_SUBMIT_ERRORS = prefix + "CLEAR_SUBMIT_ERRORS";
-exports.CLEAR_SUBMIT_ERRORS = CLEAR_SUBMIT_ERRORS;
-var CLEAR_ASYNC_ERROR = prefix + "CLEAR_ASYNC_ERROR";
-exports.CLEAR_ASYNC_ERROR = CLEAR_ASYNC_ERROR;
-var DESTROY = prefix + "DESTROY";
-exports.DESTROY = DESTROY;
-var FOCUS = prefix + "FOCUS";
-exports.FOCUS = FOCUS;
-var INITIALIZE = prefix + "INITIALIZE";
-exports.INITIALIZE = INITIALIZE;
-var REGISTER_FIELD = prefix + "REGISTER_FIELD";
-exports.REGISTER_FIELD = REGISTER_FIELD;
-var RESET = prefix + "RESET";
-exports.RESET = RESET;
-var RESET_SECTION = prefix + "RESET_SECTION";
-exports.RESET_SECTION = RESET_SECTION;
-var SET_SUBMIT_FAILED = prefix + "SET_SUBMIT_FAILED";
-exports.SET_SUBMIT_FAILED = SET_SUBMIT_FAILED;
-var SET_SUBMIT_SUCCEEDED = prefix + "SET_SUBMIT_SUCCEEDED";
-exports.SET_SUBMIT_SUCCEEDED = SET_SUBMIT_SUCCEEDED;
-var START_ASYNC_VALIDATION = prefix + "START_ASYNC_VALIDATION";
-exports.START_ASYNC_VALIDATION = START_ASYNC_VALIDATION;
-var START_SUBMIT = prefix + "START_SUBMIT";
-exports.START_SUBMIT = START_SUBMIT;
-var STOP_ASYNC_VALIDATION = prefix + "STOP_ASYNC_VALIDATION";
-exports.STOP_ASYNC_VALIDATION = STOP_ASYNC_VALIDATION;
-var STOP_SUBMIT = prefix + "STOP_SUBMIT";
-exports.STOP_SUBMIT = STOP_SUBMIT;
-var SUBMIT = prefix + "SUBMIT";
-exports.SUBMIT = SUBMIT;
-var TOUCH = prefix + "TOUCH";
-exports.TOUCH = TOUCH;
-var UNREGISTER_FIELD = prefix + "UNREGISTER_FIELD";
-exports.UNREGISTER_FIELD = UNREGISTER_FIELD;
-var UNTOUCH = prefix + "UNTOUCH";
-exports.UNTOUCH = UNTOUCH;
-var UPDATE_SYNC_ERRORS = prefix + "UPDATE_SYNC_ERRORS";
-exports.UPDATE_SYNC_ERRORS = UPDATE_SYNC_ERRORS;
-var UPDATE_SYNC_WARNINGS = prefix + "UPDATE_SYNC_WARNINGS";
-exports.UPDATE_SYNC_WARNINGS = UPDATE_SYNC_WARNINGS;
-var _default = {
-  ARRAY_INSERT: ARRAY_INSERT,
-  ARRAY_MOVE: ARRAY_MOVE,
-  ARRAY_POP: ARRAY_POP,
-  ARRAY_PUSH: ARRAY_PUSH,
-  ARRAY_REMOVE: ARRAY_REMOVE,
-  ARRAY_REMOVE_ALL: ARRAY_REMOVE_ALL,
-  ARRAY_SHIFT: ARRAY_SHIFT,
-  ARRAY_SPLICE: ARRAY_SPLICE,
-  ARRAY_UNSHIFT: ARRAY_UNSHIFT,
-  ARRAY_SWAP: ARRAY_SWAP,
-  AUTOFILL: AUTOFILL,
-  BLUR: BLUR,
-  CHANGE: CHANGE,
-  CLEAR_FIELDS: CLEAR_FIELDS,
-  CLEAR_SUBMIT: CLEAR_SUBMIT,
-  CLEAR_SUBMIT_ERRORS: CLEAR_SUBMIT_ERRORS,
-  CLEAR_ASYNC_ERROR: CLEAR_ASYNC_ERROR,
-  DESTROY: DESTROY,
-  FOCUS: FOCUS,
-  INITIALIZE: INITIALIZE,
-  REGISTER_FIELD: REGISTER_FIELD,
-  RESET: RESET,
-  RESET_SECTION: RESET_SECTION,
-  SET_SUBMIT_FAILED: SET_SUBMIT_FAILED,
-  SET_SUBMIT_SUCCEEDED: SET_SUBMIT_SUCCEEDED,
-  START_ASYNC_VALIDATION: START_ASYNC_VALIDATION,
-  START_SUBMIT: START_SUBMIT,
-  STOP_ASYNC_VALIDATION: STOP_ASYNC_VALIDATION,
-  STOP_SUBMIT: STOP_SUBMIT,
-  SUBMIT: SUBMIT,
-  TOUCH: TOUCH,
-  UNREGISTER_FIELD: UNREGISTER_FIELD,
-  UNTOUCH: UNTOUCH,
-  UPDATE_SYNC_ERRORS: UPDATE_SYNC_ERRORS,
-  UPDATE_SYNC_WARNINGS: UPDATE_SYNC_WARNINGS
-};
-exports["default"] = _default;
-
-/***/ }),
-
 /***/ "./node_modules/redux-thunk/es/index.js":
 /*!**********************************************!*\
   !*** ./node_modules/redux-thunk/es/index.js ***!
@@ -87597,10 +87472,43 @@ var Task = function Task(props) {
     return user.surname + " " + user.name;
   };
 
+  var getDifferenceDay = function getDifferenceDay(date) {
+    return Math.ceil((new Date(date) - new Date()) / (1000 * 3600 * 24));
+  };
+
+  var changeTitleClass = function changeTitleClass(date_end, status_id) {
+    if (getDifferenceDay(date_end) < 0 && status_id !== 3) {
+      return "content__title content__title_error";
+    } else {
+      if (status_id === 3) {
+        return "content__title content__title_complete";
+      } else {
+        return "content__title";
+      }
+    }
+  };
+
   var allTasks = props.tasks;
+  var dates = ["На сегодня", "На неделю", "Больше чем на неделю"];
 
   switch (props.sort) {
     case "date_end":
+      allTasks.sort(function (t1, t2) {
+        if (new Date(t2[props.sort]) > new Date(t1[props.sort])) {
+          return -1;
+        }
+
+        if (new Date(t1[props.sort]) > new Date(t2[props.sort])) {
+          return 1;
+        }
+
+        return 0;
+      });
+      allTasks = allTasks.filter(function (t) {
+        return getDifferenceDay(t['date_end']) >= 0;
+      });
+      break;
+
     case "updated_at":
       if (props.sortDirection) {
         allTasks.sort(function (t1, t2) {
@@ -87650,17 +87558,30 @@ var Task = function Task(props) {
       break;
   }
 
+  var getTimeBlock = function getTimeBlock(index) {
+    var str = dates[index].substr(0);
+    dates[index] = "";
+    return str;
+  };
+
+  console.log();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "content__tasks"
   }, allTasks.map(function (t) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, props.sort === "date_end" && dates[0].length > 0 && getNewDate(t.date_end) == new Date().toLocaleDateString() ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "content__time"
+    }, getTimeBlock(0)) : "", props.sort === "date_end" && dates[1].length > 0 && getDifferenceDay(t.date_end) >= 1 && getDifferenceDay(t.date_end) <= 7 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "content__time"
+    }, getTimeBlock(1)) : "", props.sort === "date_end" && dates[2].length > 0 && getDifferenceDay(t.date_end) > 7 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "content__time"
+    }, getTimeBlock(2)) : "", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "content__task",
       key: t.id,
       onClick: function onClick() {
         return props.changeTask(t);
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: new Date() > new Date(t.date_end) && t.status_id !== 3 ? "content__title content__title_error" : "content__title"
+      className: changeTitleClass(t.date_end, t.status_id)
     }, t.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "content__priority"
     }, "\u041F\u0440\u0438\u043E\u0440\u0438\u0442\u0435\u0442: ", props.priorities[t.priority_id - 1].name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -87669,7 +87590,7 @@ var Task = function Task(props) {
       className: "content__worker"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "\u0418\u0441\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C:"), getUserFullName(t.user_worker_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "content__status"
-    }, "\u0421\u0442\u0430\u0442\u0443\u0441: ", props.statuses[t.status_id - 1].name));
+    }, "\u0421\u0442\u0430\u0442\u0443\u0441: ", props.statuses[t.status_id - 1].name)));
   }));
 };
 
@@ -88213,15 +88134,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logoutUser", function() { return logoutUser; });
 /* harmony import */ var _components_api_api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/api/api */ "./resources/js/src/components/api/api.js");
 /* harmony import */ var _initialize_reducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./initialize-reducer */ "./resources/js/src/redux/initialize-reducer.js");
-/* harmony import */ var redux_form_lib_actionTypes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-form/lib/actionTypes */ "./node_modules/redux-form/lib/actionTypes.js");
-/* harmony import */ var redux_form_lib_actionTypes__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(redux_form_lib_actionTypes__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var redux_form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux-form */ "./node_modules/redux-form/es/index.js");
+/* harmony import */ var redux_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-form */ "./node_modules/redux-form/es/index.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 
 
 
@@ -88318,7 +88236,7 @@ var loginUser = function loginUser(data) {
       if (response.result) {
         location.reload();
       } else {
-        dispatch(Object(redux_form__WEBPACK_IMPORTED_MODULE_3__["stopSubmit"])('login', {
+        dispatch(Object(redux_form__WEBPACK_IMPORTED_MODULE_2__["stopSubmit"])('login', {
           login: response.text,
           password: " "
         }));

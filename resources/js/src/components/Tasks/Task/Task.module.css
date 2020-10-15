@@ -26,6 +26,17 @@
     transform: scale(1.05);
 }
 
+.content__time {
+    width: 100%;
+    padding: 10px 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
 .content__title {
     padding: 2px 0;
     padding-left: 4px;
@@ -35,6 +46,11 @@
 
 .content__title_error {
     background-color: red;
+    color: #fff;
+}
+
+.content__title_complete {
+    background-color: limegreen;
     color: #fff;
 }
 

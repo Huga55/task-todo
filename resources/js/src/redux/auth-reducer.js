@@ -1,6 +1,5 @@
 import {usersAPI} from "../components/api/api";
 import {deleteAppReady} from "./initialize-reducer";
-import {SET_SUBMIT_FAILED} from "redux-form/lib/actionTypes";
 import {stopSubmit} from "redux-form";
 
 const UPDATE_AUTH = "UPDATE_AUTH";
