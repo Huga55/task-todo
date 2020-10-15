@@ -12,12 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('index');
+	return view('index');
+});
+Route::get('/{any}', function ($any) {
+	return view('index');
 });
 
+/*
 Route::get('/auth/me', 'AuthController@checkUser');
 Route::post('/auth/user', 'AuthController@authUser');
 
-Route::get('user/info', 'InfoController@getInfo');
+Route::get('user/info', 'InfoController@getInfo');*/

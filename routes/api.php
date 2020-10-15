@@ -18,4 +18,22 @@ use Illuminate\Support\Facades\Route;
     return $request->user();
 });*/
 
+Route::get('auth/me', 'AuthController@checkUser');
+Route::post('auth/login', 'AuthController@authUser');
+
+Route::group(['middleware' => 'auth:api'], function() {
+    Route::get('user/workers', 'InfoController@getWorkers');
+    Route::get('user/tasks', 'InfoController@getTasks');
+
+    Route::get('app/statuses', 'InfoController@getStatuses');
+    Route::get('app/priorities', 'InfoController@getPriorities');
+    Route::get('app/users', 'InfoController@getAllUsers');
+
+    Route::post('task/create', 'TaskController@create');
+    Route::put('task/change', 'TaskController@change');
+
+    Route::delete('auth/logout/{id}', 'AuthController@logout');
+});
+
+
 //Route::get('/auth/me', 'AuthController@checkUser');
