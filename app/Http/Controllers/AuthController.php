@@ -42,4 +42,11 @@ class AuthController extends Controller
 
         return response()->json(['data' => "User logged out"], 200);
     }
+
+    public function test()
+    {
+        $statuses = Status::all();
+
+        return response()->json(['statuses' => $statuses], 200);
+    }
 }

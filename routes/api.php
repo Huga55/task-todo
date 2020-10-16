@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
     return $request->user();
 });*/
 
+Route::get('auth/test', 'AuthController@test');
 Route::get('auth/me', 'AuthController@checkUser');
 Route::post('auth/login', 'AuthController@authUser');
 

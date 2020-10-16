@@ -87918,6 +87918,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var instance = axios__WEBPACK_IMPORTED_MODULE_0__["create"]({
   withCredentials: true,
+
+  /*baseURL: "http://127.0.0.1:8000/api/",*/
   baseURL: "//task-todo-my-project.herokuapp.com/public/api/",
   headers: {
     Authorization: "Bearer " + localStorage.getItem('token')
